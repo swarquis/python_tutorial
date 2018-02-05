@@ -15,7 +15,7 @@ def main():
 	while True:
 		p = Process(target=receive,args=(clientInstance,clientAddr))
 		p.start()
-		p.join()
+		p.close()
 	s.close()
 
 
